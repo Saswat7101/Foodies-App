@@ -5,12 +5,12 @@ import logoImg from "@/assets/logo.png";
 
 export default function MainHeader() {
   return (
-    <header>
-      <Link href="/">
+    <header className={classes.header}>
+      <Link className={classes.logo} href="/">
         <img src={logoImg.src} alt="A plate with food on it" />
         Next Level Food
       </Link>
-      <nav>
+      <nav className={classes.nav}>
         <ul>
           <li>
             <Link href="/meals">Browse meals</Link>
