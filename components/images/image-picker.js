@@ -40,10 +40,12 @@ export default function ImagePicker({ label, name }) {
           className={classes.input}
           type="file"
           id={name}
+          name={name}
           accept="image/png, image/jpeg"
           ref={imageInput}
           onChange={handleImageChange}
           required
+          aria-hidden="true"
         />
         <button
           className={classes.button}
